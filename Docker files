@@ -45,8 +45,8 @@ First of all the jmeter base image needs to be created from the opend-jdk image,
 
 ============Build, tag and push the master image============
 
-		docker build --tag="kubernautslabs/jmeter-master:latest" -f Dockerfile-master .
-		docker push kubernautslabs/jmeter-master:latest
+		docker build --tag="cloudssky/jmeter-master:latest" -f Dockerfile-master .
+		docker push cloudssky/jmeter-master:latest
 
 ================JMETER-SLAVES DOCKER FILE=====================
 		FROM kubernautslabs/jmeter-base
@@ -62,8 +62,8 @@ First of all the jmeter base image needs to be created from the opend-jdk image,
 
 ============Build, tag and push the slave image:================
 
-		docker build --tag="kubernautslabs/jmeter-slave:latest" -f Dockerfile-slave .
-		docker push kubernautslabs/jmeter-slave:latest
+		docker build --tag="cloudssky/jmeter-slave:latest" -f Dockerfile-slave .
+		docker push cloudssky/jmeter-slave:latest
 
 ================JMETER-REPORTER DOCKER FILE=====================
 
